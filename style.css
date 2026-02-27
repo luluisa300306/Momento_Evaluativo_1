@@ -7,6 +7,8 @@
     --color-texto-principal: #FFFFFF;
     --color-texto-secundario: #CCCCCC;
     --color-acento-primario: #FFD400;
+    --color-acento-oscuro: #C5A900;
+    --color-borde-acento: #FFD400;
     --color-borde: #FFFFFF;
 
     --fuente-titulo: 'Bebas Neue', sans-serif;
@@ -35,22 +37,43 @@ header {
 header div {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 5px;
 }
 
 header h1 {
     font-family: var(--fuente-titulo);
-    letter-spacing: 2px;
-    font-size: 28px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    margin-right: 350px;
 }
 
 nav ul {
+    margin-left: 20px;
     list-style: none;
     display: flex;
-    gap: var(--padding-gap);
+    gap: 50px;
+    font-size: 15px;
+    font-weight: 700;
 }
+
 nav a {
     text-decoration: none;
     color: var(--color-texto-principal);
     font-weight: 600;
+}
+
+.btn-contacto {
+    background-color: var(--color-acento-primario);
+    font-family: var(--color-texto-principal);
+    color: var(--color-fondo-principal);
+    padding: 8px 16px;
+    font-weight: 800;    
+}
+
+.btn-contacto:hover {
+    background-color: var(--color-acento-oscuro);
+}
+
+header img {
+    display: block;
 }
