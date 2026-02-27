@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --color-fondo-principal: #000000;
+    --color-fondo-secundario: #0A0A0A;
+    --color-texto-principal: #FFFFFF;
+    --color-texto-secundario: #CCCCCC;
+    --color-acento-primario: #FFD400;
+    --color-borde: #FFFFFF;
+
+    --fuente-titulo: 'Bebas Neue', sans-serif;
+    --fuente-texto: 'Inter', sans-serif;
+
+    --padding-gap: 20px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-fondo-principal);
+    color: var(--color-texto-principal);
+    font-family: var(--fuente-texto);
+}
+
+header {
+    border-bottom: 2px solid var(--color-borde);
+    padding: var(--padding-gap);
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-family: var(--fuente-titulo);
+    letter-spacing: 2px;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--padding-gap);
+}
+nav a {
+    text-decoration: none;
+    color: var(--color-texto-principal);
+    font-weight: 600;
+}
