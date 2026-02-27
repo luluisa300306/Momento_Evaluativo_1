@@ -1,6 +1,6 @@
 function calculartiempodeproyecto() {
-    var secciones = prompt("Ingrese el número de secciones del sitio web");
-    var complejidad = prompt("Ingrese el nivel de complejidad: 1 (baja), 2 (media), 3 (alta)");
+    var secciones = prompt("Ingrese el número de servicio a tomar del sitio web");
+    var complejidad = prompt("Ingrese el nivel de complejidad de la pieza siendo 1 la mas baja y 3 la mas alta: 1 (baja), 2 (media), 3 (alta)");
 
     if (secciones == "" || complejidad == "") {
         alert("Debe ingresar todos los datos");
