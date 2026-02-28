@@ -43,16 +43,16 @@ header div {
 header h1 {
     font-family: var(--fuente-titulo);
     letter-spacing: 1px;
-    font-size: 18px;
+    font-size: 20px;
     margin-right: 350px;
 }
 
 nav ul {
-    margin-left: 20px;
+    margin-left: 300px;
     list-style: none;
     display: flex;
-    gap: 50px;
-    font-size: 15px;
+    gap: 80px;
+    font-size: 20px;
     font-weight: 700;
 }
 
@@ -92,6 +92,7 @@ header img {
 .imc img {
     width: 1000px;
     margin: 40px;
+    align-content: center;
 }
 
 .imc p {
