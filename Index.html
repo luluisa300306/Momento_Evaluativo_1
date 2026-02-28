@@ -26,33 +26,37 @@
         </header>
 
         <main>
-            <section class="imc">
+            <section class="tarjeta-calculadora">
                 <h2>Calculadora de Viabilidad de Proyecto</h2>
+                
                 <img src="img/servicios.png" alt="servicios">
+
                 <p>Estima si el proyecto es viable segun lo que deseas y la duración que deseas que se demore</p>
 
-                <div id="Calculadora">
-                    <label for="servicio">Tipo de servicio</label>
-                    <select name="tipos de servico" id="servicio">
-                        <option value=""></option>
-                        <option value="Desarrollo web">Desarrollo web</option>
-                        <option value="Diseño UI/UX">Diseño UI/UX</option>
-                        <option value="Marketing Digital">Marketing Digital</option>
-                    </select>
+                <div class="tarjeta">
+                    <div id="campo-1">
+                        <label for="servicio">Tipo de servicio</label>
+                        <select id="servicio">
+                            <option value=""></option>
+                            <option value="Desarrollo web">Desarrollo web</option>
+                            <option value="Diseño UI/UX">Diseño UI/UX</option>
+                            <option value="Marketing Digital">Marketing Digital</option>
+                        </select>
                     
+                    </div>
+
+                    <div class="campo-2">
+                        <label for="numeroSemanas">¿Cuanto crees que se puede demorar?</label>
+                        <input type="number" id="numeroSemanas" min="1" max="20">
+                    </div>
+
+                    <button id="viabilidadProyecto">Calcular Proyecto</button>
+
+                    <div>
+                        <p id="estadoProyecto"></p>
+                        <p id="mensajeProyecto"></p>
+                    </div>
                 </div>
-
-                <div class="input-group">
-                    <label for="numeroSemanas">¿Cuanto crees que se puede demorar?</label>
-                    <input type="number" name="numeroSemanas" id="numeroSemanas" min="1" max="20">
-                </div>
-
-                <p id="resultado"></p>
-
-                <button id="viabilidadProyecto">Calcular Proyecto</button>
-
-                <p id="estadoProyecto"></p>
-                <p id="mensajeProyecto"></p>
             </section>
         </main>
 
@@ -72,6 +76,4 @@
 
     </footer>
     </body>
-
-    
 </html>
