@@ -181,11 +181,11 @@ footer div {
     align-items: center;
 }
 
-footer p{
+footer p {
     color: var(--color-acento-primario);
 }
 
-footer a{
+footer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
