@@ -40,6 +40,6 @@ window.addEventListener('scroll', () => {
     const figuras = document.querySelector('.figuras-parallax');
 
     if (figuras) {
-        figuras.computedStyleMap.transform = `translateY(${scrollY * 0.3}px)`;
+        figuras.style.transform = `translateY(${scrollY * 0.3}px)`;
     }
 });
