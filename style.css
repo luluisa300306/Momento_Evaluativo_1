@@ -113,14 +113,14 @@ nav a {
     top: -120px;
     right: -100px;
     transform: rotate(45deg);
-    font-size: 550px;
+    font-size: 850px;
 }
 
 .figuras-parallax i:last-child {
     bottom: -150px;
     left: -120px;
     transform: rotate(45deg);
-    font-size: 480px;
+    font-size: 850px;
 }
 
 .fondo {
