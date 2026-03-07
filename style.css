@@ -87,8 +87,53 @@ nav a {
 }
 
 .tarjeta-calculadora {
-    min-height: 70vh;
+    position: relative;
+    min-height: 100vh;
     padding: 110px 100px;
+    overflow: hidden;
+}
+
+.figuras-parallax {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.figuras-parallax i {
+    position: absolute;
+    font-size: 500px;
+    color: var(--color-acento-primario);
+    opacity: 0.9;
+    line-height: 1;
+}
+
+.figuras-parallax i:first-child {
+    top: -120px;
+    right: -100px;
+    transform: rotate(45deg);
+    font-size: 550px;
+}
+
+.figuras-parallax i:last-child {
+    bottom: -150px;
+    left: -120px;
+    transform: rotate(45deg);
+    font-size: 480px;
+}
+
+.fondo {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.80);
+    pointer-events: none;
+}
+
+.contenido {
+    position: relative;
+    z-index: 2;
 }
 
 .tarjeta-calculadora h2 {
