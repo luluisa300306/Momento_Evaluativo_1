@@ -34,3 +34,12 @@ function calcularProyecto() {
     document.getElementById("estadoProyecto").textContent = estado;
     document.getElementById("mensajeProyecto").textContent = mensaje;
 }
+
+window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const figuras = document.querySelector('.figuras-parallax');
+
+    if (figuras) {
+        figuras.computedStyleMap.transform = `translateY(${scrollY * 0.3}px)`;
+    }
+});
